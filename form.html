@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Account Opening Form</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles.css">
+<link rel="stylesheet" href="assets/form.css">
+<link rel="stylesheet" href="assets/agent/agent.css">
+<script type="importmap">
+{ "imports": {
+  "livekit-client": "./vendor/livekit/livekit-client.mjs"
+} }
+</script>
+</head>
+<body class="form-body">
+
+<div class="test-banner">Internal test build — no data is submitted anywhere. For authorized UBL testing only.</div>
+
+<!-- Form header -->
+<header class="fhead">
+  <div class="container">
+    <span class="logo"><span class="oval">UBL</span><span class="tag">where <b>you</b> come first</span></span>
+    <div class="applying"><small>You're applying for</small><b id="acctName">Asaan Digital Account</b></div>
+    <div class="right">
+      <span class="secure"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>Your details are secure</span>
+      <span class="divider"></span>
+      <a href="index.html" class="close" aria-label="Close"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M6 6l12 12M18 6 6 18"/></svg></a>
+    </div>
+  </div>
+</header>
+
+<!-- Stepper -->
+<div class="stepper"><div class="inner" id="stepper"></div></div>
+
+<!-- Dynamic screen mounts here -->
+<main id="screen"></main>
+
+<script src="assets/form.js"></script>
+<script src="assets/agent/form-api.js"></script>
+<script type="module" src="assets/agent/agent.js"></script>
+</body>
+</html>

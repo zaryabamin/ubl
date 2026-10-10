@@ -1,0 +1,4 @@
+.env
+node_modules/
+voice-cache/
+.claude/settings.local.json

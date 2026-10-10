@@ -1,0 +1,9 @@
+{
+  "name": "ubl-demo",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "sherpa-onnx-node": "^1.13.8"
+  }
+}
